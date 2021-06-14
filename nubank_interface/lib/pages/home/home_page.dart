@@ -24,7 +24,13 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         alignment: Alignment.topCenter,
         children: <Widget>[
-          MyAppBar()
+          MyAppBar(
+          showMenu: _showMenu,
+          onTap: () {
+            setState(() {
+              _showMenu = !_showMenu;
+            });
+          },)
         ],
       ),
     );
