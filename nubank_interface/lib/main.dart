@@ -3,11 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:nubank_interface/pages/home/home_page.dart';
 
 void main() {
-
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarBrightness: Brightness.dark
-  ));
-
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarBrightness: Brightness.dark));
 
   runApp(MyApp());
 }
@@ -26,4 +23,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
